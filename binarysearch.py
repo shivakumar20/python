@@ -97,3 +97,31 @@ query = 6
 ans = locate_card(cards, query)
 
 print(f'answer: {cards[ans]}' )
+
+
+# -------------------------------------------Time Complexity-------------------------------------------
+
+# Initial length - N
+
+# Iteration 1 - N/2
+
+# Iteration 2 - N/4 i.e. N/2^2
+
+# Iteration 3 - N/8 i.e. N/2^3
+
+# Iteration k - N/2^k
+
+# Since the final length of the array is 1, we can find the
+
+# N/2^k = 1
+
+# Rearranging the terms, we get
+
+# N = 2^k
+
+# Taking the logarithm
+
+# k = log N
+
+# Where log refers to log to the base 2. Therefore, our algorithm has the time complexity O(log N). 
+# This fact is often stated as: binary search runs in logarithmic time. You can verify that the space complexity of binary search is O(1).
